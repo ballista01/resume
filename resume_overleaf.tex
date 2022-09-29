@@ -1,0 +1,295 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    {\Huge \scshape Wenxue Zhao} \\ \vspace{1pt}
+    407-1420 Rue Saint Mathieu, Montreal, Quebec, H3H 2J1 \\ \vspace{1pt}
+    \small \raisebox{-0.1\height}\faPhone\ 819-993-3118 ~ \href{mailto:ballista01@outlook.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{ballista01@outlook.com}} ~ 
+    \href{https://www.linkedin.com/in/wzhao-concordia/}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/wzhao-concordia}}  ~
+    \href{https://github.com/ballista01}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/ballista01}}
+    \vspace{-8pt}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Concordia University}{Sep. 2022 -- Aug. 2024}
+      {Master of Engineering in Software Engineering}{Montreal, Quebec}
+    \resumeSubheading
+      {Bishop's University}{Sep. 2019 -- May 2022}
+      {Bachelor of Science in Computer Science 92.41\% CGPA, With Distinction}{Sherbrooke, Quebec}
+    \resumeSubheading
+      {China University of Mining and Technology}{Sep. 2013 -- May 2018}
+      {Bachelor of Architecture}{Xuzhou, Jiangsu}
+  \resumeSubHeadingListEnd
+
+%------RELEVANT COURSEWORK-------
+\section{Relevant Coursework}
+    %\resumeSubHeadingListStart
+        \begin{multicols}{4}
+            \begin{itemize}[itemsep=-5pt, parsep=3pt]
+                \item\small Data Structures 100\%
+                \item Algorithms Analysis 95\%
+                \item Using\&DesigningDB 97\%
+                \item Intro to Networks 98\%
+                \item Principles of OS 95\%
+                \item Prog Mobile Apps 95\%
+                \item SoftwareEngineering 84\%
+                \item Data Mining 89\%
+            \end{itemize}
+        \end{multicols}
+        \vspace*{2.0\multicolsep}
+    %\resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+% \section{Experience}
+%   \resumeSubHeadingListStart
+
+%     \resumeSubheading
+%       {Electronics Company}{May 2020 -- August 2020}
+%       {Software Engineer Intern}{City, State}
+%       \resumeItemListStart
+%         \resumeItem{Developed a service to automatically perform a set of unit tests daily on a product in development in order to decrease time needed for team members to identify and fix bugs/issues.}
+%         \resumeItem{Incorporated scripts using Python and PowerShell to aggregate XML test results into an organized format and to load the latest build code onto the hardware, so that daily testing can be performed.}
+%         \resumeItem{Utilized Jenkins to provide a continuous integration service in order to automate the entire process of loading the latest build code and test files, running the tests, and generating a report of the results once per day.}
+%         \resumeItem{Explored ways to visualize and send a daily report of test results to team members  using HTML, Javascript, and CSS.}
+%       \resumeItemListEnd
+
+%     \resumeSubheading
+%       {Startup, Inc}{May 2019 -- August 2019}
+%       {Front End Developer Intern}{City, State}
+%       \resumeItemListStart
+%         \resumeItem{Assisted in development of the front end of a mobile application for iOS/Android using Dart and the Flutter framework.}
+%         \resumeItem{Worked with Google Firebase to manage user inputted data across multiple platforms including web and mobile apps.}
+%         \resumeItem{Collaborated with team members using version control systems such as Git to organize modifications and assign tasks.}
+%         \resumeItem{Utilized Android Studio as a development environment in order to visualize the application in both iOS and Android.}
+%     \resumeItemListEnd
+    
+%   \resumeSubHeadingListEnd
+% \vspace{-16pt}
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{JPG2x} $|$ \emph{Firestore, Firebase Storage, Kotlin, Express, NodeJS, Torch, Docker, Android Studio}}{November 2021}
+          \resumeItemListStart
+            \resumeItem{A cloud image enhancer using deep convolutional neural networks. Multi-server and load balance are supported.}
+          \resumeItemListEnd
+          \vspace{-13pt}
+      \resumeProjectHeading
+          {\textbf{Chatty} $|$ \emph{Firestore, Firebase Storage, Kotlin, Android Studio}}{November 2021}
+          \resumeItemListStart
+            \resumeItem{An instant message app that supports media files transfer, Google and Facebook sign in.}
+          \resumeItemListEnd
+          \vspace{-13pt}
+      \resumeProjectHeading
+          {\textbf{Wizamp} $|$ \emph{Kotlin, Android Studio}}{October 2021}
+          \resumeItemListStart
+            \resumeItem{An android music player.}
+          \resumeItemListEnd
+          \vspace{-13pt}
+      \resumeItemListEnd
+          \resumeProjectHeading
+          {\textbf{E-commerce Website} $|$ \emph{React, Material\-UI, Mongoose, NodeJS, ExpressJS, JWT, Nginx, AWS}}{September 2021}
+          \resumeItemListStart
+            \resumeItem{An E-mall built with MERN stack. With user sign-in, homepage, product details, shipping, payment, order history & details and etc implemented.}
+          \resumeItemListEnd
+          \vspace{-13pt}
+      \resumeProjectHeading
+          {\textbf{Chatroom App} $|$ \emph{ExpressJS, NodeJS, PassportJS, Sockit.io}}{August 2021}
+          \resumeItemListStart
+            \resumeItem{A web IM app. With user sign-in implemented.}
+          \resumeItemListEnd
+          \vspace{-13pt}
+      \resumeProjectHeading
+          {\textbf{Data Visualization Projects} $|$ \emph{Python, Seaborn, Plotly, Matplotlib, Numpy}}{November 2021}
+          \resumeItemListStart
+            \resumeItem{Explore dataset from biology labs, world bank and etc. Bring up hypotheses, validate them, and show them with interactive plots.}
+          \resumeItemListEnd
+          \vspace{-13pt}
+      \resumeProjectHeading
+          {\textbf{Image Reconstruction From Human Brain Activity} $|$ \emph{Python, Bash, OpenCV, Matplotlib, Caffe, Docker}}{June 2020}
+          \resumeItemListStart
+            \resumeItem{Denoise, align, and segment human brain fMRI data with python algorithms, FSL and AFNI tools.}
+            \vspace{-7pt}
+            \resumeItem{Automate the process with bash and python script.}
+            \vspace{-7pt}
+            \resumeItem{Train a model to restore visual and imaginary pictures from brain fMRI data.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+\vspace{-10pt}
+
+% \resumeProjectHeading
+% {\textbf{Transaction Management GUI} $|$ \emph{Java, Eclipse, JavaFX}}{October 2020}
+% \resumeItemListStart
+%   \resumeItem{Designed a sample banking transaction system using Java to simulate the common functions of using a bank account.}
+%   \resumeItem{Used JavaFX to create a GUI that supports actions such as creating an account, deposit, withdraw, list all acounts, etc.}
+%   \resumeItem{Implemented object-oriented programming practices such as inheritance to create different account types and databases.}
+% \resumeItemListEnd 
+% \resumeSubHeadingListEnd
+% \vspace{-15pt}
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: JavaScript, TypeScript, Golang, Java, Kotlin, Python, C\#, C, HTML, CSS, SQL} \\
+     \textbf{Developer Tools}{: VS Code, Android Studio, Eclipse, AWS, Google Cloud Platform} \\
+     \textbf{Technologies/Frameworks}{: Linux, Git, React, Express, Jest, AWS CDK, CDK8s, CloudFormation} \\
+    }}
+ \end{itemize}
+ \vspace{-16pt}
+
+
+%-----------Certifications---------------
+\section{Certifications and Honors}
+    \resumeSubHeadingListStart
+        \resumeSubheading{AWS Certified DevOps - Professional}{August 2022 -- August 2025}{Scored: 811/1000, Validation Number: 1HB4PHCKSEQ4Q3GW}{Amazon Web Services}
+            % \resumeItemListStart
+            %     \resumeItem{Validation Number: 1HB4PHCKSEQ4Q3GW}
+            % \resumeItemListEnd
+        \resumeSubheading{AWS Certified Developer - Asssociate}{Feburary 2022 -- August 2025}{Scored: 866/1000, Validation Number: GP20PHC1YB4QQB9X}{Amazon Web Services}
+            % \resumeItemListStart
+            %     \resumeItem{Validation Number: GP20PHC1YB4QQB9X}
+            % \resumeItemListEnd
+        \resumeSubheading{Florence May Foreman Scholarship}{2020, 2021}{10000 CAD}{Bishop's University}
+            % \resumeItemListStart
+            %     \resumeItem{Validation Number: 10000 CAD Scholarship}
+            % \resumeItemListEnd
+        \resumeSubheading{Academic Honor Roll}{2020, 2021}{}{Bishop's University}
+            % \resumeItemListStart
+            %     \resumeItem{Validation Number: 10000 CAD Scholarship}
+            % \resumeItemListEnd
+            \resumeSubheading{Programming Ability Test - Advanced Level}{March 2019}{}{Zhejiang University}
+    \resumeSubHeadingListEnd
+    
+
+
+\end{document}
